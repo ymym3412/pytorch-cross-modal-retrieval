@@ -1,0 +1,24 @@
+vocab:
+  load_vocab: true
+  vocab_file: 'vocab'
+  max_vocab: 100000
+  min_count: 3
+image:
+  image_size: 256
+  pretrained_model: 'vgg16'
+text:
+  embed_dim: 300
+  hidden_dim: 1024
+  output_dim: 1024
+  dropout: 0.5
+  num_layers: 1
+  use_abs: false
+cross_modal:
+  shared_dim: 1024
+learning:
+  margin: 0.2
+  use_cuda: true
+  grad_clip: 2.0
+  init_lr: 0.002
+data:
+  batch_size: 16
